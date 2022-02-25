@@ -154,6 +154,7 @@ namespace cba
             CommandLineOptions.Clo.PrintInstrumented = true;
             CommandLineOptions.Clo.ProcedureInlining = CommandLineOptions.Inlining.Assume;
             CommandLineOptions.Clo.TypeEncodingMethod = CommandLineOptions.TypeEncoding.Monomorphic;
+            CommandLineOptions.Clo.HeadRecursion = true;
 
             // /noRemoveEmptyBlocks is needed for field refinement. It ensures that
             // we get an actual path in the program (so that we can concretize it)
